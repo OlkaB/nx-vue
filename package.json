@@ -2,7 +2,10 @@
   "name": "@org/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve": "npx nx serve org",
+    "commands": "nx show project org --web"
+  },
   "private": true,
   "dependencies": {
     "vue": "^3.3.4"
