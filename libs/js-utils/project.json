@@ -1,0 +1,19 @@
+{
+  "name": "js-utils",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/js-utils/src",
+  "projectType": "library",
+  "tags": ["js-utils"],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/js-utils",
+        "main": "libs/js-utils/src/index.js",
+        "tsConfig": "libs/js-utils/tsconfig.lib.json",
+        "assets": ["libs/js-utils/*.md"]
+      }
+    }
+  }
+}
